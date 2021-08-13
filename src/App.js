@@ -1,10 +1,15 @@
 import "./styles.css";
+import List from "./List";
 
 export default function App() {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <div className="container">
+        <div className="justify-content-center">
+          <h1>Infinite Scroll</h1>
+          <List />
+        </div>
+      </div>
     </div>
   );
 }

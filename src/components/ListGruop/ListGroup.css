@@ -1,0 +1,17 @@
+.list-group {
+  padding: 10px;
+}
+
+.list-group-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: left;
+  list-style-type: none;
+  font-family: sans-serif;
+  padding: 15px;
+  width: 300px;
+}
+.list-group-item:first-of-type {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
