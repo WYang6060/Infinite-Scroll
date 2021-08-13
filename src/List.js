@@ -1,13 +1,13 @@
 import { useCallback, useEffect, useState } from "react";
 import ListGroup from "./components/ListGroup/ListGroup";
-import useInfiniteGroup from "./hook/useInfiniteScroll";
+import useInfiniteScroll from "./hook/useInfiniteScroll";
 
 const List = () => {
   const [listItems, setListItems] = useState(
     Array.from(Array(15).keys(), (n) => n + 1)
   );
 
-  const [isFetching, setIsFetcing] = useInfiniteGroup();
+  const [isFetching, setIsFetcing] = useInfiniteScroll();
 
   const fetchMoreListItems = useCallback(() => {
     if (isFetching) {
