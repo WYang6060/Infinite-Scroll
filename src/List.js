@@ -4,13 +4,12 @@ import useInfiniteScroll from "./hook/useInfiniteScroll";
 
 import ContentLoader from "react-content-loader";
 
-const ThreeDots = (props) => (
+const ThreeDots = () => (
   <ContentLoader
     viewBox="0 0 400 40"
     height={50}
     width={400}
     backgroundColor="transparent"
-    {...props}
   >
     <circle cx="150" cy="16" r="8" />
     <circle cx="194" cy="16" r="8" />
